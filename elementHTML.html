@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
      <body>
+         
           <!-- tag title -->
           <h1>Tiêu đề</h1> 
           <p>oke oke</p>
@@ -55,5 +56,20 @@
                <del>blue</del>
                 red.
           </p>
-     </body>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script>
+              function loadDoc() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                    }
+                };
+                xhttp.open("GET", "  https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/GDP-data.json", true);
+                xhttp.send();
+                return xhttp.responseText
+                }
+                console.log(loadDoc())
+          </script>
+        
+     </body>                  
 </html>
