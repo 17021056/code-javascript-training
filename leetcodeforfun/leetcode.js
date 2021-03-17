@@ -308,3 +308,4 @@ var longestPalindrome = function(s) {
 };
 var s = 'babad'
 console.log(longestPalindrome(s))
+console.log("okeland")
